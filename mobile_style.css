@@ -1,0 +1,151 @@
+/* Tab */
+@media only screen and (max-width: 988px) {
+  .container {
+    width: 90%;
+  }
+
+  header {
+    text-align: center;
+    flex-direction: row-reverse;
+  }
+  .logo {
+    flex-basis: 90%;
+  }
+
+  /* This section is for menubar. show menu bar in tab and mobile view after click on menu icon */
+  .menu_checkbox {
+    display: block;
+  }
+  .menu_checkbox .fa {
+    font-size: 24px;
+  }
+  #menu_checkbox:checked ~ .menu_item_container {
+    left: 0%;
+  }
+  /* -------------Section Ends------------- */
+
+  .cart_icon {
+    font-size: 30px;
+    display: block;
+  }
+  .menu_item_container {
+    position: absolute;
+    left: -300px;
+    transition: 0.2s;
+    background-color: #ffe4c4;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px 0;
+    z-index: 100;
+  }
+  header nav ul {
+    display: block;
+    padding: 0;
+  }
+  .menu_item {
+    padding: 10px 50px;
+    margin-top: 10px;
+  }
+
+  /* -----------Showcase-------------- */
+  .showcase {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .shocase_headline {
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 35px;
+    margin-top: 15px;
+  }
+  .shocase_headline,
+  .shocase_paragraph,
+  .showcase_btn_container {
+    text-align: center;
+  }
+  .shocase_image_container {
+    max-width: 400px;
+  }
+
+  /*----------------------------
+  Popular Collection
+------------------------------*/
+  .popular_collection_container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+
+  .colleciton_name {
+    margin-top: 15px;
+  }
+  .price,
+  .colleciton_name {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: bold;
+    color: #3d3d42;
+  }
+
+  /* Flash Sale */
+  .product_container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Phone */
+@media only screen and (max-width: 500px) {
+  .logo {
+    flex-basis: 80%;
+    font-size: 20px;
+  }
+  nav {
+    flex-basis: 10%;
+  }
+  /* Showcase */
+  .shocase_headline {
+    font-size: 28px;
+  }
+
+  /* ----------------------------
+  Popular Collection
+------------------------------*/
+
+  .popular_collection_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .popular_collection p {
+    text-align: center;
+    margin: 25px 0;
+    padding: 10px 0;
+    font-size: 20px;
+    background-color: #e02c6d;
+    border-radius: 5px;
+  }
+  .popular_collection p a {
+    color: white;
+  }
+
+  /*------------------------------
+  Flash Sale
+------------------------------*/
+  .product_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .newsletter_subscribtion {
+    margin: 30px 0;
+  }
+  .newsletter_subscribtion h4 {
+    font-size: 16px;
+    text-align: center;
+  }
+  .newsletter_subscribtion input {
+    width: 80%;
+  }
+
+  footer p {
+    line-height: 15px;
+  }
+}
